@@ -8,8 +8,13 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ConfigPropertyReaderUtil {
-
-public static String getPropertyValueByKey(String key, String filePathFromProjectDir){
+    /**
+     * returns property value based on provided file path and key
+     * @param key
+     * @param filePathFromProjectDir
+     * @return
+     */
+    public static String getPropertyValueByKey(String key, String filePathFromProjectDir){
         Properties properties = new Properties();
         String fullFilePath = System.getProperty("user.dir")+"/"+filePathFromProjectDir;
         try {
