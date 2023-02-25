@@ -24,3 +24,6 @@ testLogs/
 *.settings
 *.project
 *.mvn
+# user defined files/folder
+src/main/java/com/ak/selenium/util/UtilUnitTester.java
+src/main/resources/app_test.properties
