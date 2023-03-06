@@ -11,12 +11,12 @@ public class ConfigPropertyReaderUtil {
     /**
      * returns property value based on provided file path and key
      * @param key
-     * @param filePathFromProjectDir
+     * @param fileName
      * @return
      */
-    public static String getPropertyValueByKey(String key, String filePathFromProjectDir){
+    public static String getPropertyValueByKey(String key, String fileName){
         Properties properties = new Properties();
-        String fullFilePath = System.getProperty("user.dir")+"/"+filePathFromProjectDir;
+        String fullFilePath = System.getProperty("user.dir") + "/src/main/resources/" + fileName;
         try {
             FileInputStream inputStream = new FileInputStream(fullFilePath);
             properties.load(inputStream);
