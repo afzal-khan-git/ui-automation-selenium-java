@@ -19,7 +19,11 @@
 
     <selenium.version>3.8.0</selenium.version>
     <testng.version>7.7.1</testng.version>
-    <webdrivermanager>5.3.2</webdrivermanager>
+    <webdrivermanager.version>5.3.2</webdrivermanager.version>
+    <commons.version>2.11.0</commons.version>
+    <apachepoi.version>5.2.3</apachepoi.version>
+    <apachepoiooxml.version>5.2.3</apachepoiooxml.version>
+
   </properties>
 
 
@@ -43,32 +47,29 @@
     <dependency>
       <groupId>io.github.bonigarcia</groupId>
       <artifactId>webdrivermanager</artifactId>
-      <version>5.3.2</version>
+      <version>${webdrivermanager.version}</version>
     </dependency>
     <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
     <dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
-      <version>2.11.0</version>
+      <version>${commons.version}</version>
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi</artifactId>
-      <version>5.2.3</version>
+      <version>${apachepoi.version}</version>
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi-ooxml</artifactId>
-      <version>5.2.3</version>
+      <version>${apachepoiooxml.version}</version>
     </dependency>
 
-
-
-
-
   </dependencies>
+
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
